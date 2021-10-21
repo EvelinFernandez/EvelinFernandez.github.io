@@ -56,10 +56,11 @@ header nav ul li a:hover{
 section#main{
     background-color: black;
     height: 100vh;
+    overflow: hidden; 
 }
 #main video{
-    width: 100%;
-    height: 100%;
+    min-width: 100%;
+    min-height: 100%;
 }
 #main #overlay{
     width: 100%;
@@ -69,7 +70,6 @@ section#main{
     top: 0;
     left: 0;
     z-index: 3;
-
 }
 #main #overlay h2{
     margin-top: 200px;
@@ -112,4 +112,169 @@ section#main{
 a.btn{
     text-decoration: none;
     color: white;
+}
+#about, #contacto{
+    width: 80%;
+    height: 650px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+#about .col, #contacto .col{
+    float:left;
+    width: 50%;
+    text-align: justify;
+}
+#about > h2{
+    text-align: center;
+    font-size: 3rem;
+    padding-top: 30px;
+    font-family: 'PT Serif', serif;
+}
+#about > .col >h2{
+    font-size: 2rem;
+    font-family: 'PT Serif', serif;
+    font-weight: lighter;
+    padding-bottom: 50px;
+}
+#about > .col >h4{
+    color: black;
+}
+#about .col img{
+    width: 70%;
+    margin: 20px auto;
+    display: block;
+}
+#about .col p{
+    margin-top: 50px;
+}
+
+/*PROYECTOS*/
+#proyectos{
+    background-color: rgb(255, 255, 255) ;
+    width: 100%;
+    height: 450px;
+}
+#proyectos .proyecto{
+    width: 23%;
+    background-color: rgb(243, 243, 243);
+    height: 350px;
+    float: left ;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 20px;
+}
+#proyectos .proyecto img{
+    width: 100%;
+    border-radius: 30px;
+}
+.border{
+    border-radius: 30px;
+}
+#proyect h2{
+    padding-left: 30px;
+    font-family: 'PT Serif', serif;
+}
+#proyect #proyectos h2{
+    padding-top: 20px;
+    padding-left: 30px;
+    font-family: 'PT Serif', serif;
+}
+#proyect #proyectos h3{
+    margin-left: 30px;
+    font-family: 'PT Serif', serif;
+    font-weight: lighter;
+}
+.btnProyect{
+    background-color: #389696;
+    color:black;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    margin-left: 27%;
+    text-decoration: none;
+    color: white;
+}
+.btnProyect:hover{
+    opacity: 0.8;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    color:black;
+}
+
+/*IMAGEN*/
+#imagen{
+    width: 100%;
+    height: 50%;
+    margin-left: 20px;
+}
+#imagen #frase{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 1600px;
+    left: 0;
+    z-index: 3;
+}
+#imagen #frase h2{
+    margin-top: 200px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 4rem;
+}
+/*FORMULARIO*/
+#contacto .col{
+    width: 400px;
+    height: 650px;
+    padding: 60px;
+}
+#contacto .col h3{
+    margin-top: 20px;
+}
+.controls{
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 6px;
+    border: 1px solid #389696;
+}
+.controls1{
+    width: 100%;
+    padding: 10px;
+    padding-bottom: 100px;
+    border-radius: 4px;
+    margin-bottom: 50px;
+    border: 1px solid #389696;
+}
+.btnEnviar{
+    background-color: #389696;
+    color:black;
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-left: 35%;
+    text-decoration: none;
+    color: white;
+    margin-top: 30px;
+}
+.btnEnviar:hover{
+    opacity: 0.8;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    color:black;
+}
+
+#eve{
+    width: 100%;
+    height: 130px;
+    background-color: rgb(0, 0, 0) ;
+}
+#eve #frase{
+    width: 100%;
+    position: absolute;
+    top: 2790px;
+    left: 0;
+    z-index: 3;
+}
+#eve #frase h2{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 1rem;
 }
