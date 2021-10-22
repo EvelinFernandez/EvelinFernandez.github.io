@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <link href="./css/all.min.css"rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 </head>
 <body>
@@ -19,16 +21,21 @@
         <nav class="item">
             <ul>
                 <li>
-                    <a href="#">Inicio</a>
+                    <a href="#main" data-scroll>Inicio</a>
                 </li>
                 <li>
-                    <a href="#">Sobre Mi</a>
+                    <a href="#about" data-scroll>Sobre Mi</a>
                 </li>
                 <li>
-                    <a href="#">Portafolio</a>
+                    <a href="#proyect" data-scroll>Portafolio</a>
                 </li>
                 <li>
-                    <a href="#">Contacto</a>
+                    <a href="#contacto" data-scroll>Contacto</a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fas fa-bars"></i>
+                    </a>
                 </li>
             </ul>
         </nav>
@@ -37,11 +44,12 @@
             <video autoplay muted playsinline loop preload="auto">
                 <source src="./Imagenes/video.mp4" type="video/mp4">
             </video>
+        
             <div id="overlay">
-                <h2>
+                <h2 data-aos="fade-in" >
                     Bienvenidos a mi Portafolio
                 </h2>
-                <h3>
+                <h3 data-aos="fade-left">
                     Evelin Fernandez <br>
                     Desarrollador Web <br>
                     <br>
@@ -52,7 +60,7 @@
     <section id="about">
         <h2>About Me</h2>
         <div class="col">
-            <img src="./Imagenes/personaje.png">
+            <img src="./Imagenes/personaje.png" data-aos="flip-left">
         </div>
         <div class="col">
             <h2>Evelin Fernandez</h2>
@@ -116,7 +124,7 @@
     <section id="contacto">
         
         <div class="col">
-            <h2>Contacto</h2>
+            <h2>Contacto<i class="fas fa-user"></i></h2>
             <h3>Nombre</h3>
             <input class= "controls" type= "text" name="nombre" id="nombre" placeholder="Nombre">
         <p>
@@ -149,5 +157,11 @@
             </div>
         </div>
     </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+   <script>
+      AOS.init();
+      var scroll = new SmoothScroll('a[href*="#"]');
+    </script>  
 </body>
 </html>
