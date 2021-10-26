@@ -11,7 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:wght@100&display=swap" rel="stylesheet">
     <link href="./css/all.min.css"rel="stylesheet" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
+    <link rel="stylesheet" href="./css/mediaquerys.css"/>
+    <link rel="stylesheet" href="./css/print.css" media="print"/>
 </head>
 <body>
     <header>
@@ -19,11 +20,11 @@
             <h1>Mi Portafolio</h1>
         </div>
         <nav class="item">
-            <ul>
+            <ul id="menuWeb">
                 <li>
                     <a href="#main" data-scroll>Inicio</a>
                 </li>
-                <li>
+                <li> 
                     <a href="#about" data-scroll>Sobre Mi</a>
                 </li>
                 <li>
@@ -32,6 +33,8 @@
                 <li>
                     <a href="#contacto" data-scroll>Contacto</a>
                 </li>
+            </ul>
+            <ul id="menuMovil">
                 <li>
                     <a href="">
                         <i class="fas fa-bars"></i>
