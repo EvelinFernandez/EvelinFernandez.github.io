@@ -8,17 +8,18 @@
     header #menuWeb{
         display: none;
     }
-    #about .col, #contacto .col {
+    #about .col, #inscripcion .col {
         width: 100%;
     }
-    #proyectos .proyecto {
+    #tarifas .plan {
         width: 100%;
         height: auto;
     }
     #main video{
         display: none;
     }
-    #main #overlay{
-        background-image: url(../Imagenes/fondo.png);
-    }
+}
+
+@media (max-width: 700) {
+    
 }

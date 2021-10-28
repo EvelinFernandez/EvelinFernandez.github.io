@@ -1,0 +1,28 @@
+@media (max-width: 500px){
+    header nav{
+        width: 50px;
+    }
+    header #menuMovil{
+        display: block;
+    }
+    header #menuWeb{
+        display: none;
+    }
+    #about .col, #incripcion .col {
+        width: 100%;
+    }
+    #proyectos .proyecto {
+        width: 100%;
+        height: auto;
+    }
+    #main video{
+        display: none;
+    }
+    #main #overlay{
+        background-image: url(../Imagenes/fondo.png);
+    }
+}
+
+@media (max-width: 700) {
+    
+}
