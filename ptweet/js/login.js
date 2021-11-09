@@ -8,7 +8,7 @@ window.onload = function (){
         let pass = txtPassword.value;
         let arregloUsuarios=[
             { id: 1,nombre:"Federica Pluche",imagen:"fede.jpg",username:"fedep",password:"123" },
-            { id: 1,nombre:"Don Camerino",imagen:"dc.jpg",username:"camerino",password:"123" },
+            { id: 1,nombre:"Don Camerino",imagen:"camerino.jpg",username:"camerino",password:"123" },
             { id: 1,nombre:"Vivi",imagen:"vivi.jpg",username:"vivi",password:"123" },
         ];
         let encontro=false;
